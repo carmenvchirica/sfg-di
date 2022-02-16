@@ -6,9 +6,10 @@ import ch.springframework.sfgdi.datasource.FakeDataSource;
 import ch.springframework.sfgdi.repositories.EnglishGreetingRepository;
 import ch.springframework.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import ch.springframework.sfgdi.services.*;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.*;
 
+@EnableConfigurationProperties(SfgConstructorConfiguration.class)
 @ImportResource("classpath:sfgdi-config.xml")
 @Configuration
 public class GreetingServiceConfiguration {

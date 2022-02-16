@@ -2,8 +2,6 @@ package ch.springframework.sfgdi.configurations;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
 
 @ConfigurationProperties("ch")
 @Configuration
